@@ -1,0 +1,14 @@
+//operator pverloading example
+class Example:
+    def __init__(self,x):
+        self.x=x
+    def __add__(self,a):
+        return self.x+a.x
+        
+object1=Example(int(input("Enter a value:")))
+object2=Example(int(input("Enter a value:")))
+print(object1+object2)
+
+object3=Example(str(input("Enter the value")))
+object4=Example(str(input("enter the value")))
+print(object3+object4)
